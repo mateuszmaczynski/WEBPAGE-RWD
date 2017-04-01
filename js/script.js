@@ -35,10 +35,7 @@ $(document).ready(function() {
 
     var openOffer = (function(){
 
-        var image1 = $("#offer-image1");
-        var image2 = $("#offer-image2");
-        var image3 = $("#offer-image3");
-        var image4 = $("#offer-image4");
+        var offerImageWrapper = $(".offer-image-wrapper");
 
         var assemble = $("#assemble-description");
         var renovate = $("#renovate-description");
@@ -51,7 +48,7 @@ $(document).ready(function() {
         var sella = $("#a-sell");
         var terracea = $("#a-terrace");
 
-        image1.on("click", function () {
+        offerImageWrapper.on("click", function () {
        if(assemble.is(":hidden")){
            assemble.slideDown(500);
        } else{
@@ -68,60 +65,7 @@ $(document).ready(function() {
         }
         });
 
-        image2.on("click", function () {
-            if(renovate.is(":hidden")){
-                renovate.slideDown(500);
-            } else{
-                renovate.slideUp(500);
-            }
-            if(assemble) {
-                assemble.hide();
-            }
-            if(terrace){
-                terrace.hide();
-            }
-            if(sell){
-                sell.hide();
-            }
-        });
-
-        image3.on("click", function () {
-            if(terrace.is(":hidden")){
-                terrace.slideDown(500);
-            } else{
-                terrace.slideUp(500);
-            }
-            if(assemble) {
-                assemble.hide();
-            }
-            if(renovate){
-                renovate.hide();
-            }
-            if(sell){
-                sell.hide();
-            }
-        });
-
-        image4.on("click", function () {
-
-            if(sell.is(":hidden")){
-                sell.slideDown(500);
-            } else{
-                sell.slideUp(500);
-            }
-            if(assemble) {
-                assemble.hide();
-            }
-            if(renovate){
-                renovate.hide();
-            }
-            if(terrace){
-                terrace.hide();
-            }
-        });
-
         function closeDescription(){
-
             $('.offer-description').css('display','none');
         };
 
