@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/blueimp-gallery.min.css">
@@ -35,16 +34,15 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#home" class="nav-item"><i class="fa fa-home" aria-hidden="true"></i></a></li>
                         <li><a href="#about" class="nav-item">O firmie</a></li>
-                        <li><a href="#offer" class="nav-item">Oferta</a></li>
-                       <!--  <li class="dropdown">
+                        <li class="dropdown">
                             <a href="#" class="dropdown-toggle " data-toggle="dropdown" aria-haspopup="true"> Oferta </a>
                             <ul class="dropdown-menu" >
-                                <li><a href="#offer-image1" id="a-assemble">Montaż</a></li>
-                                <li><a href="#offer-image2" id="a-renovate">Odnowienie podłogi</a></li>
-                                <li><a href="#offer-image3" id="a-terrace">Wykonanie tarasu</a></li>
-                                <li><a href="#offer-image4" id="a-sell">Sprzedaż podłogi drewnianej</a></li>
+                                <li><a href="#assemble" class="offer-menu" id="a-assemble">Montaż</a></li>
+                                <li><a href="#renovate" class="offer-menu" id="a-renovate">Odnowienie podłogi</a></li>
+                                <li><a href="#terrace" class="offer-menu" id="a-terrace">Wykonanie tarasu</a></li>
+                                <li><a href="#sell" class="offer-menu"  id="a-sell">Sprzedaż podłogi drewnianej</a></li>
                             </ul>
-                        </li> -->
+                        </li>
                         <li><a href="#gallery-images" class="nav-item">Realizacje</a></li>
                         <li><a href="#contact" class="nav-item">Kontakt</a></li>
                     </ul>
@@ -59,13 +57,13 @@
         <div class="row">
             <ul class="bxslider bxslider-images">
                 <div class="item">
+                    <img src="images/salon.jpg" class="bxslider-images">
+                </div>
+                <div class="item">
                     <img src="images/lazienka.jpg" class="bxslider-images">
                 </div>
                 <div class="item">
                     <img src="images/biuro.jpg" class="bxslider-images">
-                </div>
-                <div class="item">
-                    <img src="images/salon.jpg" class="bxslider-images">
                 </div>
                 <div class="item">
                     <img src="images/salon1.jpg" class="bxslider-images">
@@ -121,19 +119,19 @@
                  Przed przystąpieniem do prac prowadzimy precyzyjne pomiary wilgotności i jakości podłoża. Pracujemy w oparciu o najwyższej jakości materiały, stosujemy nowoczesne technologie oraz wysokiej jakości sprzęt.
                  Wieloletnie doświadczenie w branży i stale rosnące grono zadowolonych klientów jest gwarancją najwyższej jakości świadczonych przez nas usług.
                  <p><h2 id="offer-items"> Oferujemy Państwo następujące usługi: </h2> </p> </span>
-                <div class="col-xs-12 col-sm-6 col-lg-3 img" id="offer-image1">
+                <div class="col-xs-12 col-sm-6 col-lg-3 img offer-image-wrapper" id="assemble">
                   <img src="images/floorAssemble.jpg" alt="Montaż podłogi" class="offer-images">
                     <p>Montaż</p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-lg-3 img" id="offer-image2">
+                <div class="col-xs-12 col-sm-6 col-lg-3 img offer-image-wrapper" id="renovate">
                     <img src="images/floorRenovate.jpg" alt="Cyklinowanie parkietu"  class="offer-images">
                     <p>Odnowienie podłogi</p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-lg-3 img" id="offer-image3" >
+                <div class="col-xs-12 col-sm-6 col-lg-3 img offer-image-wrapper" id="terrace" >
                     <img src="images/wooden%20terrace.jpg" alt="Wykonanie terasu" class="offer-images">
                     <p>Wykonanie tarasu</p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-lg-3 img" id="offer-image4">
+                <div class="col-xs-12 col-sm-6 col-lg-3 img offer-image-wrapper" id="sell">
                     <img src="images/floorsSell.jpg" alt="Sprzedaż parkietu" class="offer-images">
                     <p>Sprzedaż podłogi drewnianej</p>
                 </div>
@@ -237,8 +235,6 @@
                     <p>W naszej ofercie znajdą Państwo pełną gama parkietów oraz listew przypodłogowych z litego drewna. Współpracujemy wyłącznie z uznanymi producentami krajowymi i zagranicznymi co zapewnia
                     najwyższą jakość oferowanych przez nas produktów. Dzięki naszej wieloletniej współpracy z producentami możemy Państwu zapewnić atrakcyjne ceny, które będą niższe niż przy samodzielnym zakupie.
                         W celu poznania szczegółów zapraszamy do kontaktu.</p>
-
-
                         <h3>Nasza oferta podłóg drewnianych:</h3>
                         <h4> Parkiet</h4>
                         Najbardziej popularna, tradycyjna podłoga wykonana z różnych gatunków drewna:
@@ -269,13 +265,11 @@
                         Wszystkim naszym klientom zawsze sugerujemy, by decydując się na określony gatunek drewna, zawsze brali pod uwagę warunki oraz eksploatację wymarzonej podłogi.
                         W miejscach częściej użytkowanych  sprawdzi się twardsze drewno, które zapewni podłodze długą odporność na uszkodzenia i wgniecenia, a Państwu pozwoli cieszyć się przez lata piękną
                         i trwałą podłogą.
-
                         <p>Koszt podłogi dębowej deski wynosi od 250 do 350zł za 1m2.
                         W cenie jest deska (120 - 160 x 22 x 500 - 2200) chemia do montażu i polakierowania gotowej podłogi już wyszlifowanej w trakcie prac.
                         W celu poznania szczegółów zapraszamy do kontaktu z nami.</p>
                         <p>Koszt podłogi dębowej parkietu wynosi od 200 do 250zł za 1m2. W tym jest parkiet zależnie od klasy i wielkości ( 70 x 22 x 250 - 500) + chemia do
                         przyklejania i polakierowania bądź olejowania + praca ( montaż, szlif, lakierowanie).</p>
-
                         <small>
                             <div class="legalArticle">
                                 Przedstawiona tu oferta cenowa ma charakter informacyjny i nie stanowi oferty handlowej w rozumieniu Art.66 par.1 Kodeksu Cywilnego.
@@ -388,8 +382,6 @@
                             <img src="images/TARAS-2s.jpg">
                         </a>
                     </div>
-
-
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                         <a href="images/SCHODY-1.jpg">
                             <img src="images/SCHODY-1s.jpg">

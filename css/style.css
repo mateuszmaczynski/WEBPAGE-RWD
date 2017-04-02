@@ -1,6 +1,5 @@
 body{
     margin: 0 auto;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -21,9 +20,6 @@ h4{
 span{
     text-align: justify;
 }
-
-
-
 .navbar-default  {
     background-color:  #4d4d4d;
     border-color: #444;
@@ -51,10 +47,10 @@ span{
 .about{
     padding-top:10px;
 }
-.offer {
+.offer{
     background-color:white;
 }
-.img  {
+.img{
     text-align: center;
     padding: 40px 5px;
 }
@@ -65,7 +61,7 @@ span{
 ol{
    margin-left: 30px;
 }
-.offer-images:hover {
+.offer-images:hover{
     transform:scale(1.05);
     opacity: 0.8;
     transition: all .2s;
@@ -81,7 +77,7 @@ ol{
     text-align: center;
     padding: 5px 0px;
 }
-.hideElement:hover {
+.hideElement:hover{
     color: blue;
     font-weight: 800;
     font-size: 110%;
@@ -121,7 +117,7 @@ ol{
     line-height: 26px;
     font-size: 20px;
 }
-.form-control {
+.form-control{
     display: block;
     height: 50px;
     padding: 10px 0px;
@@ -147,7 +143,6 @@ ol{
     color: red;
     font-size: 10px;
 }
-
 .icons-social{
     text-align: center;
     padding-top: 20px;
@@ -205,7 +200,6 @@ ol{
 .copyright a i {
     color: #fff;
 }
-
 .errorSending{
     background-color: #cd5c5c;
 }
@@ -217,7 +211,6 @@ ol{
     font-weight: 600;
     text-align: center;
 }
-
 @media all and (max-width: 320px){
     .bx-pager{
         display: none;
@@ -238,15 +231,12 @@ ol{
     .navbar-default {
         font-size: 12px;
     }
-
     body {
         font-size: 12px;
     }
-
     .copyright {
         font-size: 8px;
     }
-
     .mainmenu li > a {
         color: #5bc0de !important;
     }
@@ -257,7 +247,6 @@ ol{
 @media all and (min-width: 1200px){
     .offer-description{
         padding: 10px;
-
     }
     .bxslider-images{
         height: calc(100vh - 75px);
